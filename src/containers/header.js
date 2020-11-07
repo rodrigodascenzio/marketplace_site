@@ -3,15 +3,24 @@ import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
 
 const domain = document.location.host.split(".")[0] ? document.location.host.split(".")[0] : document.location.host;
+const path = document.location.pathname;
 
-export function HeaderContainer({ children, logo }) {
+export function HeaderContainer({ children, bg }) {
   return (
-    <Header src={require("../images/misc/misc_bk1.jpg")}>
+    <Header src={bg} bg={bg ? true : false}>
       <Header.Frame>
         <Header.Group>
-          <Header.Logo to={ROUTES.HOME} src={logo} alt="" />
+          <Header.Logo
+            to={ROUTES.HOME}
+            src={
+              domain === ROUTES.NUPPIN
+                ? require("../images/misc/nuppin.png")
+                : require("../images/misc/company_nuppin.png")
+            }
+            alt=""
+          />
         </Header.Group>
-        {domain === ROUTES.NUPPIN && (
+        {domain === ROUTES.NUPPIN && path === ROUTES.HOME && (
           <Header.Group>
             <Header.ButtonLink href={ROUTES.PARCEIRO_SITE}>Seja um parceiro</Header.ButtonLink>
           </Header.Group>

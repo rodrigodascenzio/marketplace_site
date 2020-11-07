@@ -15,13 +15,13 @@ export const faq1 = [
     id: 3,
     header: "Eu pago taxa para usar?",
     body:
-      "Existem diversar formar de trabalhar com o nuppin, com ou sem taxa. Se você usar o plano da lojas em grupo, tem uma taxa de 9% sobre as vendas, isso por causa do custo do marketing que temos nesse canal para te trazer mais clientes. Mas para quem não quer usar esse canal, temos os planos com site ou aplicativo próprio, onde não existe taxa sobre as vendas.",
+      "Existem diversar formas de trabalhar com o nuppin, com ou sem taxa. Se você usar o plano de lojas em grupo, tem uma taxa de 9% sobre as vendas, isso por causa do custo do marketing que temos nesse canal para te trazer mais clientes. Mas para quem não quer usar esse canal, temos os planos com site ou aplicativo próprio, onde não existe taxa sobre as vendas.",
   },
   {
     id: 4,
     header: "Que tipo de negócio posso cadastrar?",
     body:
-      "Trabalhamos com 3 categorias. Produtos, Alimentos e Serviços de Beleza. Se o seu negócio está dentro dessas categorias você pode cadastra-lo com a gente",
+      "Trabalhamos com 3 categorias. Produtos, Alimentos e Serviços de Beleza. Se o seu negócio está dentro dessas categorias, você pode cadastra-lo com a gente",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const faq2 = [
     id: 3,
     header: "Não tem estabelecimento por perto, o que fazer?",
     body:
-      "Estamos trabalhando para aumentar nossa área de atuação, mas realmente ainda não conseguimos ter estabelecimentos parceiros em todos os lugar, mas existem algumas coisas que podem ser feitas para ajudar nisso. Você tem a opção de compartilhar com pessoas que se interessariam em ingressar como nosso parceiro, ou você mesmo ser o primeiro da sua região",
+      "Estamos trabalhando para aumentar nossa área de atuação, mas realmente ainda não conseguimos ter estabelecimentos parceiros em todos os lugares. Você tem a opção de compartilhar com pessoas que se interessariam em ingressar como nosso parceiro, ou você mesmo ser o primeiro da sua região",
   },
   ,
   {

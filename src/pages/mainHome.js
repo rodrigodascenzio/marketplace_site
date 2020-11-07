@@ -10,7 +10,7 @@ import { faq2 } from "../fixtures/faqs";
 export default function Home() {
   return (
     <>
-      <HeaderContainer logo={require("../images/misc/nuppin.png")}>
+      <HeaderContainer bg={require("../images/misc/misc_bk1.jpg")}>
         <Feature>
           <Feature.Title>Produtos, Alimentos e Serviços de Beleza</Feature.Title>
           <Feature.SubTitle>

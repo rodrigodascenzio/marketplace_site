@@ -2,34 +2,33 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   background: ${(props) => props.theme.feature_background};
+  padding: 30px;
 `;
 
 export const Card = styled.div`
   max-width: 1000px;
   border-radius: 10px;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background: white;
   flex-direction: column;
+  padding: 30px;
 `;
 
-export const Img = styled.img`
-  align-self: center;
-  max-width: 100%;
-  height: 50vh;
-  margin-top: 50px;
-  margin-left: -50px;
-
-  @media (max-width: 600px) {
-    margin-left: -20px;
-  }
-`;
-
-export const Text = styled.h1`
+export const Title = styled.h1`
   font-size: 35px;
-  color: ${(props) => props.theme.feature_color};
+  color: black;
   padding: 20px;
   align-self: center;
   text-align: center;
   font-weight: normal;
+`;
+
+export const Text = styled.p`
+  font-size: 16px;
+  color: black;
+  padding: 20px;
+  align-self: center;
+  text-align: center;
 `;

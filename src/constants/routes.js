@@ -12,8 +12,9 @@ export const NOT_FOUND = "/not_found";
 export const PROFILE = "/profile";
 export const EMAIL = "/email";
 export const SMS = "/sms";
+export const TERM = "/terms";
 
 //domain
 export const PARCEIRO_SITE = "https://parceiro.nuppin.com";
 export const PARCEIRO = "parceiro";
-export const NUPPIN = "nuppin";
+export const NUPPIN = "localhost:3000";

@@ -10,9 +10,9 @@ import { faq1 } from "../fixtures/faqs";
 export default function Home() {
   return (
     <>
-      <HeaderContainer logo={require("../images/misc/company_nuppin.png")}>
+      <HeaderContainer bg={require("../images/misc/misc_bk1.jpg")}>
         <Feature>
-          <Feature.Title>Pensado para pequeno e micro empreendedores</Feature.Title>
+          <Feature.Title>Pensado para o pequeno e micro empreendedor</Feature.Title>
           <Feature.SubTitle>Venda com a gente, no seu dominio próprio ou aplicativo. Muito simples!</Feature.SubTitle>
           <OptForm.Button />
         </Feature>

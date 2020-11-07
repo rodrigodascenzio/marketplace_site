@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import { Home, NotFound, MainHome } from "./pages";
+import { Home, NotFound, MainHome, Term } from "./pages";
 import * as ROUTES from "./constants/routes";
 import { ProtectedRoute } from "./helpers/routes";
 
@@ -14,6 +14,10 @@ export function App() {
           <ProtectedRoute exact user={true} path={ROUTES.HOME}>
             <Home />
           </ProtectedRoute>
+          <ProtectedRoute exact user={true} path={ROUTES.TERM}>
+            <Term />
+          </ProtectedRoute>
+
           <ProtectedRoute user={true} path={ROUTES.HOME}>
             <NotFound />
           </ProtectedRoute>
@@ -27,6 +31,10 @@ export function App() {
           <ProtectedRoute exact user={true} path={ROUTES.HOME}>
             <MainHome />
           </ProtectedRoute>
+          <ProtectedRoute exact user={true} path={ROUTES.TERM}>
+            <Term />
+          </ProtectedRoute>
+
           <ProtectedRoute user={true} path={ROUTES.HOME}>
             <NotFound />
           </ProtectedRoute>
