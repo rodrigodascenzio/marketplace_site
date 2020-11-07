@@ -32,12 +32,12 @@ const parceiro = {
 const seo_parceiro = {
   title: "Parceiro Nuppin",
   metaDescription: " Plataforma Nuppin Empresas",
-  favicon: "../images/misc/company_nuppin.png",
+  favicon: require("./images/misc/company_nuppin.png"),
 };
 const seo_nuppin = {
   title: "Nuppin",
   metaDescription: "Produto, Alimentos e Serviços de Beleza",
-  favicon: "../images/misc/nuppin.png",
+  favicon: require("./images/misc/nuppin.png"),
 };
 
 const domain = document.location.host.split(".")[0] ? document.location.host.split(".")[0] : document.location.host;

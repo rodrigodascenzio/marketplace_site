@@ -17,4 +17,4 @@ export const TERM = "/terms";
 //domain
 export const PARCEIRO_SITE = "https://parceiro.nuppin.com";
 export const PARCEIRO = "parceiro";
-export const NUPPIN = "localhost:3000";
+export const NUPPIN = "nuppin";

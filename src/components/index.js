@@ -6,3 +6,4 @@ export { default as Header } from "./header";
 export { default as NotFound } from "./notFound";
 export { default as Feature } from "./feature";
 export { default as Term } from "./term";
+export { default as Loading } from "./loading";

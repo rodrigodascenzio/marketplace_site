@@ -10,7 +10,7 @@ export function NotFoundContainer() {
     <NotFound>
       <NotFound.Card>
         <NotFound.Img src={require("../images/misc/error.svg")} />
-        <NotFound.Text>Essa pagina não existe</NotFound.Text>
+        <NotFound.Text>Página não encontrada..</NotFound.Text>
       </NotFound.Card>
     </NotFound>
   );

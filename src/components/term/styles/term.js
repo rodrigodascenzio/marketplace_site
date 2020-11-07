@@ -1,8 +1,7 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  background: ${(props) => props.theme.feature_background};
-  padding: 30px;
+  padding: 10px;
 `;
 
 export const Card = styled.div`
@@ -13,13 +12,12 @@ export const Card = styled.div`
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   background: white;
   flex-direction: column;
-  padding: 30px;
 `;
 
 export const Title = styled.h1`
   font-size: 35px;
   color: black;
-  padding: 20px;
+  padding: 0 20px;
   align-self: center;
   text-align: center;
   font-weight: normal;
@@ -28,7 +26,7 @@ export const Title = styled.h1`
 export const Text = styled.p`
   font-size: 16px;
   color: black;
-  padding: 20px;
+  padding: 0 20px 30px 20px;
   align-self: center;
-  text-align: center;
+  text-align: justify;
 `;

@@ -6,8 +6,9 @@ import { FooterContainer } from "../containers/footer";
 export default function NotFound() {
   return (
     <>
-      <HeaderContainer />
-      <NotFoundContainer />
+      <HeaderContainer bg={require("../images/misc/misc_bk1.jpg")}>
+        <NotFoundContainer />
+      </HeaderContainer>
       <FooterContainer />
     </>
   );

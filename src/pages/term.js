@@ -6,8 +6,9 @@ import { FooterContainer } from "../containers/footer";
 export default function Term() {
   return (
     <>
-      <HeaderContainer />
-      <TermContainer />
+      <HeaderContainer bg={require("../images/misc/misc_bk1.jpg")}>
+        <TermContainer />
+      </HeaderContainer>
       <FooterContainer />
     </>
   );

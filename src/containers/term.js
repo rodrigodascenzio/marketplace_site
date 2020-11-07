@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Term } from "../components";
+import { Term, Loading } from "../components";
 import axios from "../utils/axios";
 
 export function TermContainer() {
@@ -12,6 +12,10 @@ export function TermContainer() {
       .then((res) => setData(res.data))
       .catch((e) => {});
   }, []);
+
+  if (!data) {
+    return <Loading />;
+  }
 
   return (
     <Term>

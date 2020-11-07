@@ -1,8 +1,6 @@
 import styled from "styled-components/macro";
 
-export const Container = styled.div`
-  background: ${(props) => props.theme.feature_background};
-`;
+export const Container = styled.div``;
 
 export const Card = styled.div`
   max-width: 1000px;
@@ -29,6 +27,7 @@ export const Text = styled.h1`
   font-size: 35px;
   color: ${(props) => props.theme.feature_color};
   padding: 20px;
+  color: white;
   align-self: center;
   text-align: center;
   font-weight: normal;

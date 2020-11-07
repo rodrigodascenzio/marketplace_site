@@ -3,7 +3,6 @@ import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
 
 const domain = document.location.host.split(".")[0] ? document.location.host.split(".")[0] : document.location.host;
-const path = document.location.pathname;
 
 export function HeaderContainer({ children, bg }) {
   return (
@@ -20,7 +19,7 @@ export function HeaderContainer({ children, bg }) {
             alt=""
           />
         </Header.Group>
-        {domain === ROUTES.NUPPIN && path === ROUTES.HOME && (
+        {domain === ROUTES.NUPPIN && (
           <Header.Group>
             <Header.ButtonLink href={ROUTES.PARCEIRO_SITE}>Seja um parceiro</Header.ButtonLink>
           </Header.Group>
