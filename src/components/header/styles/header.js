@@ -1,4 +1,7 @@
 import styled from "styled-components/macro";
+import { FaReceipt } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
 
 export const Background = styled.div`
   display: flex;
@@ -58,4 +61,78 @@ export const Logo = styled.img`
     height: 90px;
     width: 90px;
   }
+`;
+
+export const PersonIcon = styled(BsFillPersonFill)`
+  border: 0;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 0 8px;
+  z-index: 10;
+  cursor: pointer;
+  background: white;
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+  align-items: center;
+  ${({ nav }) => (nav ? `background: rgba(0, 0, 0, 0.2);color: white` : "")}
+`;
+
+export const CartIcon = styled(AiOutlineShoppingCart)`
+  border: 0;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 8px;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  align-items: center;
+  ${({ nav }) => (nav ? "background-color: rgba(0, 0, 0, 0.2)" : "")}
+`;
+
+export const OrderIcon = styled(FaReceipt)`
+  border: 0;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 8px;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  align-items: center;
+  ${({ nav }) => (nav ? "background-color: rgba(0, 0, 0, 0.2)" : "")}
+`;
+
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+
+  button {
+    cursor: pointer;
+  }
+`;
+
+export const Picture = styled.button`
+  background: url(${({ src }) => src});
+  background-size: contain;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  &:hover {
+    opacity: 0.7;
+  }
+  cursor: pointer;
 `;

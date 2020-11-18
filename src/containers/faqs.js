@@ -14,7 +14,7 @@ export function FaqsContainer({ faq }) {
         ))}
       </Accordion.Frame>
 
-      <OptForm.Button />
+      <OptForm.ButtonDefault>Cadastre-se</OptForm.ButtonDefault>
     </Accordion>
   );
 }

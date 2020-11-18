@@ -7,3 +7,6 @@ export { default as NotFound } from "./notFound";
 export { default as Feature } from "./feature";
 export { default as Term } from "./term";
 export { default as Loading } from "./loading";
+export { default as Form } from "./form";
+export { default as Wrapper } from "./wrapper";
+export { default as Indication } from "./indication";

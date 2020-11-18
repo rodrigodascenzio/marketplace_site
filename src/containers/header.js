@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
+import { Context } from "../store/Store";
+import { useHistory } from "react-router-dom";
 
-const domain = document.location.host.split(".")[0] ? document.location.host.split(".")[0] : document.location.host;
+export function HeaderContainer({ children, bg, ...restProps }) {
+  const { state } = useContext(Context);
+  const { domain, user } = state;
+  const history = useHistory();
 
-export function HeaderContainer({ children, bg }) {
+  function handleClickCart() {
+    history.push(ROUTES.CART);
+  }
+
+  function handleClickOrders() {
+    history.push(ROUTES.ORDERS);
+  }
+
+  function handleClickProfile() {
+    history.push(ROUTES.PROFILE);
+  }
+
   return (
     <Header src={bg} bg={bg ? true : false}>
       <Header.Frame>
@@ -12,9 +28,9 @@ export function HeaderContainer({ children, bg }) {
           <Header.Logo
             to={ROUTES.HOME}
             src={
-              domain === ROUTES.NUPPIN
-                ? require("../images/misc/nuppin.png")
-                : require("../images/misc/company_nuppin.png")
+              domain === ROUTES.PARCEIRO
+                ? require("../images/misc/company_nuppin.png")
+                : require("../images/misc/nuppin.png")
             }
             alt=""
           />
@@ -22,6 +38,28 @@ export function HeaderContainer({ children, bg }) {
         {domain === ROUTES.NUPPIN && (
           <Header.Group>
             <Header.ButtonLink href={ROUTES.PARCEIRO_SITE}>Seja um parceiro</Header.ButtonLink>
+          </Header.Group>
+        )}
+        {domain === ROUTES.AFFILIATE && (
+          <Header.Group>
+            {user ? (
+              <>
+                <Header.OrderIcon
+                  size="24"
+                  onClick={handleClickOrders}
+                  nav={document.location.pathname === ROUTES.ORDERS}
+                />
+                <Header.CartIcon size="24" onClick={handleClickCart} nav={document.location.pathname === ROUTES.CART} />
+
+                <Header.Profile onClick={handleClickProfile}>
+                  <Header.Picture src={user.photo} nav={document.location.pathname === ROUTES.PROFILE} />
+                </Header.Profile>
+              </>
+            ) : !restProps.isInLoginProcess ? (
+              <Header.ButtonLink to={ROUTES.SIGN_IN}>Entrar</Header.ButtonLink>
+            ) : (
+              ""
+            )}
           </Header.Group>
         )}
       </Header.Frame>

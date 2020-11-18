@@ -37,6 +37,25 @@ export const Button = styled.div`
   background-position: center;
 `;
 
+export const ButtonDefault = styled.a`
+  padding: 20px 30px;
+  border-radius: 4px;
+  background: ${(props) => props.theme.secondary_color};
+  border: 2px solid ${(props) => props.theme.secondary_color};
+  white-space: nowrap;
+  color: #fff;
+  font-size: 24px;
+  outline: none;
+  align-self: center;
+  margin: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: ${(props) => props.theme.secondary_color};
+  }
+`;
+
 export const Text = styled.p`
   font-size: 19.2px;
   color: white;

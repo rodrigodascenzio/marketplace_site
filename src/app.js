@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import { Home, NotFound, MainHome, Term } from "./pages";
+import { Home, NotFound, MainHome, MainAffiliate, Term, ConfirmCode, SignIn, Register, Dashboard } from "./pages";
 import * as ROUTES from "./constants/routes";
-import { ProtectedRoute } from "./helpers/routes";
-
-const domain = document.location.host.split(".")[0] ? document.location.host.split(".")[0] : document.location.host;
+import { ProtectedRoute, IsUserRedirect } from "./helpers/routes";
+import { Context } from "./store/Store";
 
 export function App() {
+  const { state } = useContext(Context);
+  const { domain, user } = state;
+
   if (domain === ROUTES.PARCEIRO) {
     return (
       <Router>
@@ -31,6 +33,48 @@ export function App() {
           <ProtectedRoute exact user={true} path={ROUTES.HOME}>
             <MainHome />
           </ProtectedRoute>
+          <ProtectedRoute exact user={true} path={ROUTES.TERM}>
+            <Term />
+          </ProtectedRoute>
+
+          <ProtectedRoute user={true} path={ROUTES.HOME}>
+            <NotFound />
+          </ProtectedRoute>
+        </Switch>
+      </Router>
+    );
+  } else if (domain === ROUTES.AFFILIATE) {
+    return (
+      <Router>
+        <Switch>
+          <IsUserRedirect exact user={user} loggedInPath={ROUTES.DASHBOARD} path={ROUTES.SIGN_IN}>
+            <SignIn />
+          </IsUserRedirect>
+
+          <ProtectedRoute exact user={true} path={ROUTES.EMAIL}>
+            <SignIn />
+          </ProtectedRoute>
+
+          <ProtectedRoute exact user={true} path={ROUTES.SMS}>
+            <SignIn />
+          </ProtectedRoute>
+
+          <ProtectedRoute exact user={true} path={ROUTES.CONFIRM_CODE}>
+            <ConfirmCode />
+          </ProtectedRoute>
+
+          <IsUserRedirect exact user={user} loggedInPath={ROUTES.DASHBOARD} path={ROUTES.REGISTER}>
+            <Register />
+          </IsUserRedirect>
+
+          <IsUserRedirect exact user={user} loggedInPath={ROUTES.DASHBOARD} path={ROUTES.HOME}>
+            <MainAffiliate />
+          </IsUserRedirect>
+
+          <ProtectedRoute exact user={true} path={ROUTES.DASHBOARD}>
+            <Dashboard />
+          </ProtectedRoute>
+
           <ProtectedRoute exact user={true} path={ROUTES.TERM}>
             <Term />
           </ProtectedRoute>

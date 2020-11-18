@@ -1,4 +1,9 @@
 export { default as NotFound } from "./notFound";
 export { default as Home } from "./home";
 export { default as MainHome } from "./mainHome";
+export { default as MainAffiliate } from "./mainAffiliate";
 export { default as Term } from "./term";
+export { default as ConfirmCode } from "./confirmCode";
+export { default as Register } from "./register";
+export { default as SignIn } from "./signin";
+export { default as Dashboard } from "./AffiliateDashboard";

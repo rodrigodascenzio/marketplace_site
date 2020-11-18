@@ -8,13 +8,13 @@ export const Container = styled.div`
   padding: 165px 45px;
 
   @media (max-width: 600px) {
-    padding: 80px 20px;
+    padding: 80px 30px;
   }
 `;
 
 export const Title = styled.h1`
   color: white;
-  max-width: 640px;
+  max-width: 700px;
   font-size: 50px;
   margin: auto;
 
@@ -25,7 +25,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   max-width: 640px;
   font-weight: normal;
   margin: 16px auto;
