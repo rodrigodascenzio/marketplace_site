@@ -28,7 +28,7 @@ export function AffiliateFormContainer({ rerender }) {
             setcompany({ ...company, reference: "" });
           }
         } else {
-          alert("Email já indicado ou usuário já cadastrado!");
+          alert("Email já indicado ou usuário já cadastraddo!");
         }
         setProcessing(false);
       })
