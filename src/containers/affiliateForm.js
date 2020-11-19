@@ -28,7 +28,7 @@ export function AffiliateFormContainer({ rerender }) {
             setcompany({ ...company, reference: "" });
           }
         } else {
-          alert("Email já indicado ou usuário já cadastraddo!");
+          alert("Não foi possivel cadastrar, email já indicado ou usuário já cadastrado!");
         }
         setProcessing(false);
       })
@@ -56,8 +56,7 @@ export function AffiliateFormContainer({ rerender }) {
       </Form.Base>
 
       <Form.TextSmall>
-        Após a indicação, o responsavel pelo email terá até 48hrs para efetuar o pagamento para contar como uma
-        indicação sua{" "}
+        Para a sua indicação ser ativada, o responsavel pelo email terá até 7 dias para efetuar o pagamento.
       </Form.TextSmall>
     </Form>
   );

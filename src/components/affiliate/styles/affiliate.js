@@ -2,8 +2,9 @@ import styled from "styled-components/macro";
 import { color } from "../../../utils/colors";
 
 export const Container = styled.div`
-  background-color: ${color.white};
+  background: ${color.whiteLight};
   padding: 10px;
+
   @media (min-width: 700px) {
     padding: 30px;
   }
@@ -12,26 +13,13 @@ export const Container = styled.div`
 export const Card = styled.div`
   background-color: ${color.whiteLight};
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
   border-radius: 10px;
   margin: 0 auto;
   padding: 10px;
 
-  @media (min-width: 1000px) {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    padding: 50px;
-  }
-`;
-
-export const ContentBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-
   @media (min-width: 700px) {
-    margin-left: 30px;
-    border: 2px solid ${color.white};
+    padding: 50px;
   }
 `;
 
@@ -76,15 +64,10 @@ export const Item = styled.div`
       width: 100%;
       margin-bottom: 20px;
     }
-  }
-
-  @media (max-width: 700px) {
     ${Text} {
       font-size: 14px;
     }
   }
 `;
 
-export const InnerItem = styled.div`
-  margin: 0 10px;
-`;
+export const InnerItem = styled.div``;

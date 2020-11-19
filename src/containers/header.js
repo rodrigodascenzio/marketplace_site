@@ -9,12 +9,12 @@ export function HeaderContainer({ children, bg, ...restProps }) {
   const { domain, user } = state;
   const history = useHistory();
 
-  function handleClickCart() {
-    history.push(ROUTES.CART);
+  function handleClickBalance() {
+    history.push(ROUTES.BALANCE);
   }
 
-  function handleClickOrders() {
-    history.push(ROUTES.ORDERS);
+  function handleClickAffiliate() {
+    history.push(ROUTES.AFFILIATES_STORE);
   }
 
   function handleClickProfile() {
@@ -46,10 +46,14 @@ export function HeaderContainer({ children, bg, ...restProps }) {
               <>
                 <Header.OrderIcon
                   size="24"
-                  onClick={handleClickOrders}
+                  onClick={handleClickAffiliate}
                   nav={document.location.pathname === ROUTES.ORDERS}
                 />
-                <Header.CartIcon size="24" onClick={handleClickCart} nav={document.location.pathname === ROUTES.CART} />
+                <Header.CartIcon
+                  size="24"
+                  onClick={handleClickBalance}
+                  nav={document.location.pathname === ROUTES.CART}
+                />
 
                 <Header.Profile onClick={handleClickProfile}>
                   <Header.Picture src={user.photo} nav={document.location.pathname === ROUTES.PROFILE} />

@@ -62,27 +62,32 @@ export const faq2 = [
 export const faq3 = [
   {
     id: 1,
-    header: "Como comprar no nuppin?",
+    header: "Como me torno afiliado?",
     body:
-      "Para comprar no nuppin, você precisa fazer o download do aplicativo na PlayStore. Após ser instalado, você vai criar a sua conta, colocar seu endereço e assim vai aparecer os estabelecimentos perto de você para escolher o que precisa.",
+      "O programa de afiliados é privado. Para fazer parte, você precisa fazer o seu cadastro, enviar um email para afiliado@nuppin.com e aguardar nosso contato.",
   },
   {
     id: 2,
-    header: "Qual a forma de pagamento?",
+    header: "O que é um parceiro?",
     body:
-      "Oferecemos diversas opções de pagamento, cada estabelecimento é responsavel por definir quais estarão disponiveis para os clientes",
+      "Parceiro é como a gente chama os micro e pequenos empreendedores que cadastram seus negócias com a gente. São esses parceiros que você vai trazer.",
+  },
+  {
+    id: 2,
+    header: "Como encontrar esses parceiros?",
+    body:
+      "Eles estão em todos os lugares, na internet, no seu bairro, nos anuncios. Eles vendem produtos, alimentos ou serviços de beleza e você vai mostrar pra eles como vai fazer bem colocar o negócio deles online com a gente.",
   },
   {
     id: 3,
-    header: "Não tem estabelecimento por perto, o que fazer?",
+    header: "Como ganho dinheiro?",
     body:
-      "Estamos trabalhando para aumentar nossa área de atuação, mas realmente ainda não conseguimos ter estabelecimentos parceiros em todos os lugares. Você tem a opção de compartilhar com pessoas que se interessariam em ingressar como nosso parceiro, ou você mesmo ser o primeiro da sua região",
+      "Você ganha comissão por todos os parceiros que trouxer, esses parceiros pagam mensalmente para usar o Nuppin, a cada pagamento deles você ganha uma comissão.",
   },
-  ,
   {
     id: 4,
-    header: "Como faço para me tornar um parceiro?",
+    header: "Como recebo meu dinheiro?",
     body:
-      "Para isso, você precisa fazer o download do aplicativo do nuppin para empresas, lá você pode usar o mesmo cadastro que usou no nuppin. Vai inserir os dados do seu negócio, escolher o plano, organizar os produtos/serviços e já pode ficar online. Bem simples.\nMais informações em: https://parceiro.nuppin.com",
+      "É simples, você solicita o saque do seu saldo, nos informa para onde enviar o dinheiro e em pouco tempo o dinheiro estará na sua conta.",
   },
 ];

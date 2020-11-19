@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
-import { FaReceipt } from "react-icons/fa";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaStore } from "react-icons/fa";
+import { MdAccountBalanceWallet } from "react-icons/md";
 import { BsFillPersonFill } from "react-icons/bs";
 
 export const Background = styled.div`
@@ -81,7 +81,7 @@ export const PersonIcon = styled(BsFillPersonFill)`
   ${({ nav }) => (nav ? `background: rgba(0, 0, 0, 0.2);color: white` : "")}
 `;
 
-export const CartIcon = styled(AiOutlineShoppingCart)`
+export const CartIcon = styled(MdAccountBalanceWallet)`
   border: 0;
   color: white;
   padding: 5px;
@@ -97,7 +97,7 @@ export const CartIcon = styled(AiOutlineShoppingCart)`
   ${({ nav }) => (nav ? "background-color: rgba(0, 0, 0, 0.2)" : "")}
 `;
 
-export const OrderIcon = styled(FaReceipt)`
+export const OrderIcon = styled(FaStore)`
   border: 0;
   color: white;
   padding: 5px;

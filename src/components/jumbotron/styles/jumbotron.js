@@ -12,10 +12,6 @@ export const Inner = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
   }
-
-  @media (min-width: 1000px) {
-    min-height: 100vh;
-  }
 `;
 
 export const Pane = styled.div`
@@ -65,6 +61,9 @@ export const Item = styled.div`
   padding: 50px 5%;
   color: white;
   overflow: hidden;
+  @media (min-width: 1000px) {
+    min-height: 100vh;
+  }
 `;
 
 export const Container = styled.div`
@@ -73,5 +72,24 @@ export const Container = styled.div`
     ${Item}:last-of-type h2 {
       margin-bottom: 50px;
     }
+  }
+`;
+
+export const Button = styled.a`
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: ${(props) => props.theme.secondary_color};
+  border: 2px solid ${(props) => props.theme.secondary_color};
+  white-space: nowrap;
+  color: #fff;
+  font-size: 24px;
+  outline: none;
+  align-self: start;
+  margin: 20px 0;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: ${(props) => props.theme.secondary_color};
   }
 `;

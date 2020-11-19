@@ -13,10 +13,12 @@ export const EMAIL = "/email";
 export const SMS = "/sms";
 export const TERM = "/terms";
 export const DASHBOARD = "/dashboard";
+export const BALANCE = "/balance";
+export const AFFILIATES_STORE = "/affiliate";
 
 //domain
 export const PARCEIRO_SITE = "https://parceiro.nuppin.com";
 export const AFILIADO_SITE = "https://afiliado.nuppin.com";
 export const PARCEIRO = "parceiro";
 export const NUPPIN = "nuppin";
-export const AFFILIATE = "localhost:3000";
+export const AFFILIATE = "afiliado";

@@ -1,6 +1,20 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import { Home, NotFound, MainHome, MainAffiliate, Term, ConfirmCode, SignIn, Register, Dashboard } from "./pages";
+import {
+  Home,
+  NotFound,
+  MainHome,
+  MainAffiliate,
+  Term,
+  ConfirmCode,
+  SignIn,
+  Register,
+  Dashboard,
+  Balance,
+  Affiliate,
+  Profile,
+  Denied,
+} from "./pages";
 import * as ROUTES from "./constants/routes";
 import { ProtectedRoute, IsUserRedirect } from "./helpers/routes";
 import { Context } from "./store/Store";
@@ -44,6 +58,16 @@ export function App() {
       </Router>
     );
   } else if (domain === ROUTES.AFFILIATE) {
+    if (user && !user.is_affiliate && document.location.pathname != ROUTES.PROFILE) {
+      return (
+        <Router>
+          <ProtectedRoute user={true} path={ROUTES.HOME}>
+            <Denied />
+          </ProtectedRoute>
+        </Router>
+      );
+    }
+
     return (
       <Router>
         <Switch>
@@ -71,8 +95,20 @@ export function App() {
             <MainAffiliate />
           </IsUserRedirect>
 
-          <ProtectedRoute exact user={true} path={ROUTES.DASHBOARD}>
+          <ProtectedRoute exact user={user} path={ROUTES.DASHBOARD}>
             <Dashboard />
+          </ProtectedRoute>
+
+          <ProtectedRoute exact user={user} path={ROUTES.AFFILIATES_STORE}>
+            <Affiliate />
+          </ProtectedRoute>
+
+          <ProtectedRoute exact user={user} path={ROUTES.BALANCE}>
+            <Balance />
+          </ProtectedRoute>
+
+          <ProtectedRoute exact user={user} path={ROUTES.PROFILE}>
+            <Profile />
           </ProtectedRoute>
 
           <ProtectedRoute exact user={true} path={ROUTES.TERM}>

@@ -7,3 +7,7 @@ export { default as ConfirmCode } from "./confirmCode";
 export { default as Register } from "./register";
 export { default as SignIn } from "./signin";
 export { default as Dashboard } from "./AffiliateDashboard";
+export { default as Affiliate } from "./affiliatesStore";
+export { default as Balance } from "./balance";
+export { default as Profile } from "./profile";
+export { default as Denied } from "./denied";

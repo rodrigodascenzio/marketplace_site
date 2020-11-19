@@ -43,6 +43,20 @@ export const jumbo1 = [
       },
     ],
   },
+  {
+    background: "#5e35b1",
+    data: [
+      {
+        id: 99,
+        title: "Ganhe uma grana extra",
+        subTitle:
+          "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
+        image: require("../images/misc/payment.svg"),
+        alt: "",
+        direction: "row-reverse",
+      },
+    ],
+  },
 ];
 
 export const jumbo2 = [
@@ -90,6 +104,20 @@ export const jumbo2 = [
       },
     ],
   },
+  {
+    background: "#5e35b1",
+    data: [
+      {
+        id: 99,
+        title: "Ganhe uma grana extra",
+        subTitle:
+          "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
+        image: require("../images/misc/payment.svg"),
+        alt: "",
+        direction: "row-reverse",
+      },
+    ],
+  },
 ];
 
 export const jumbo3 = [
@@ -98,10 +126,10 @@ export const jumbo3 = [
     data: [
       {
         id: 1,
-        title: "Conheça os negócios da sua regição",
+        title: "Trabalhe a hora que quiser, onde quiser",
         subTitle:
-          "Tem muitos lugares legais que ainda não tem muita divulgação no internet, estamos fazendo nosso melhor para ajudar o micro e pequeno empreendedor a conseguir isso.",
-        image: require("../images/misc/welcome.svg"),
+          "O programa de afiliados te da a oportunidade de poder fazer seu próprio horario, definir suas próprias metas e te gerar uma renda extra todo mês.",
+        image: require("../images/misc/support.svg"),
         alt: "",
         direction: "row-reverse",
       },
@@ -113,10 +141,10 @@ export const jumbo3 = [
     data: [
       {
         id: 2,
-        title: "Tudo o que amamos",
+        title: "Mantenha as parceirias",
         subTitle:
-          "Os nossos parceiros são incriveis, tem tudo o que a gente precisa no dia a dia. Roupa, maquiagem, acessorios, lanche, comida fit, barbearia, manicure.. E muito mais, tudo com um excelente atendimento",
-        image: require("../images/misc/healthy_eating.svg"),
+          "Após conseguir novos parceiros, eles vão gerar comissão para você todo mês. Então é importante manter uma boa relação, acompanhar, saber como está, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
+        image: require("../images/misc/business_meeting.svg"),
         alt: "",
         direction: "row",
       },
@@ -128,10 +156,10 @@ export const jumbo3 = [
     data: [
       {
         id: 3,
-        title: "Simplicidade",
+        title: "Estamos sempre atento a nossa volta",
         subTitle:
-          "Em poucos toques você já verifica se tem o que você deseja proximo a você e ao encontrar o que precisa, é muito simples de fazer o seu pedido. Baixe o app e experimente!",
-        image: require("../images/misc/meditation.svg"),
+          "Para quem estiver indo bem no nosso programa de afiliados e tiver interesse em fazer parte da nossa equipe, sempre vão surgir umas oportunidades.",
+        image: require("../images/misc/analyse.svg"),
         alt: "",
         direction: "row-reverse",
       },

@@ -10,3 +10,6 @@ export { default as Loading } from "./loading";
 export { default as Form } from "./form";
 export { default as Wrapper } from "./wrapper";
 export { default as Indication } from "./indication";
+export { default as Affiliate } from "./affiliate";
+export { default as Profile } from "./profile";
+export { default as Balance } from "./balance";

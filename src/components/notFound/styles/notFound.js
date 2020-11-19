@@ -32,3 +32,12 @@ export const Text = styled.h1`
   text-align: center;
   font-weight: normal;
 `;
+
+export const SubText = styled.h1`
+  font-size: 20px;
+  color: ${(props) => props.theme.feature_color};
+  color: white;
+  align-self: center;
+  text-align: center;
+  font-weight: normal;
+`;
