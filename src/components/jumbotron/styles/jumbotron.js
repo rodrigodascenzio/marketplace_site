@@ -84,12 +84,14 @@ export const Button = styled.a`
   color: #fff;
   font-size: 24px;
   outline: none;
-  align-self: start;
-  margin: 20px 0;
+  margin: 20px auto 0 0;
   text-decoration: none;
   cursor: pointer;
   &:hover {
     background: #fff;
     color: ${(props) => props.theme.secondary_color};
+  }
+  @media (max-width: 1000px) {
+    margin: 0 auto 50px auto;
   }
 `;

@@ -158,7 +158,7 @@ export const jumbo3 = [
         id: 3,
         title: "Estamos sempre atento a nossa volta",
         subTitle:
-          "Para quem estiver indo bem no nosso programa de afiliados e tiver interesse em fazer parte da nossa equipe, sempre vão surgir umas oportunidades.",
+          "Para quem estiver indo bem no nosso programa de afiliados e tiver interesse em fazer parte da nossa equipe, sempre vão surgir boas oportunidades.",
         image: require("../images/misc/analyse.svg"),
         alt: "",
         direction: "row-reverse",

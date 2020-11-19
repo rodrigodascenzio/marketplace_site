@@ -60,7 +60,7 @@ export function HeaderContainer({ children, bg, ...restProps }) {
                 </Header.Profile>
               </>
             ) : !restProps.isInLoginProcess ? (
-              <Header.ButtonLink to={ROUTES.SIGN_IN}>Entrar</Header.ButtonLink>
+              <Header.ButtonLink href={ROUTES.SIGN_IN}>Entrar</Header.ButtonLink>
             ) : (
               ""
             )}

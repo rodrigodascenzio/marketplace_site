@@ -16,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   height: 100%;
   max-width: 1600px;
   margin: 0 auto;
+  overflow-x:hidden;
   a{
       outline: none;
   }
