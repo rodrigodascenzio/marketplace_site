@@ -20,7 +20,7 @@ export function AffiliateFormContainer({ rerender }) {
     event.preventDefault();
     setProcessing(true);
     axios
-      .post(INDICATION, { user_id: user.user_id, reference: company.reference })
+      .post(INDICATION, { user_id: user.id, reference: company.reference })
       .then((res) => {
         if (res.status === 200) {
           if (typeof rerender === "function") {

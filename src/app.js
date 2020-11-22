@@ -58,9 +58,12 @@ export function App() {
       </Router>
     );
   } else if (domain === ROUTES.AFFILIATE) {
-    if (user && !user.is_affiliate && document.location.pathname != ROUTES.PROFILE) {
+    if (user && !user.is_affiliate) {
       return (
         <Router>
+          <ProtectedRoute exact user={user} path={ROUTES.PROFILE}>
+            <Profile />
+          </ProtectedRoute>
           <ProtectedRoute user={true} path={ROUTES.HOME}>
             <Denied />
           </ProtectedRoute>

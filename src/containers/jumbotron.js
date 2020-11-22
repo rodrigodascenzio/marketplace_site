@@ -16,7 +16,7 @@ export function JumbotronContainer({ jumbo }) {
               <Jumbotron.Pane style={{ padding: item.direction === "row-reverse" ? "0 0 0 5%" : "0 50px" }}>
                 <Jumbotron.Title>{item.title}</Jumbotron.Title>
                 <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
-                {item.id === 99 && <Jumbotron.Button href={ROUTES.AFILIADO_SITE}>Fazer Parte</Jumbotron.Button>}
+                {item.id === 99 && <Jumbotron.Button href={ROUTES.AFILIADO_SITE}>Saiba mais</Jumbotron.Button>}
               </Jumbotron.Pane>
               <Jumbotron.Pane>
                 <Jumbotron.Image src={item.image} alt={item.alt} />

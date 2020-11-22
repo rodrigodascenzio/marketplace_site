@@ -11,7 +11,7 @@ export function IndicationContainer() {
   const { state } = useContext(Context);
   const { user } = state;
 
-  const { data } = useSWR(`${USER_INDICATION}/${user.user_id}`);
+  const { data } = useSWR(`${USER_INDICATION}/${user.id}`);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,7 +25,7 @@ export function IndicationContainer() {
         <Indication.Card>
           <AffiliateFormContainer
             rerender={() => {
-              mutate(`${USER_INDICATION}/${user.user_id}`);
+              mutate(`${USER_INDICATION}/${user.id}`);
             }}
           />
           <Indication.ContentBlock>
@@ -49,7 +49,7 @@ export function IndicationContainer() {
       <Indication.Card>
         <AffiliateFormContainer
           rerender={() => {
-            mutate(`${USER_INDICATION}/${user.user_id}`);
+            mutate(`${USER_INDICATION}/${user.id}`);
           }}
         />
         <Indication.ContentBlock>

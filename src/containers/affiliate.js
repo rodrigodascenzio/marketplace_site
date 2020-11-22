@@ -12,7 +12,7 @@ export function AffiliateContainer() {
   const { state } = useContext(Context);
   const { user } = state;
 
-  const { data } = useSWR(`${AFFILIATE}/${user.user_id}`);
+  const { data } = useSWR(`${AFFILIATE}/${user.id}`);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,7 +33,9 @@ export function AffiliateContainer() {
           <NotFound>
             <NotFound.Card>
               <NotFound.Img src={require("../images/misc/error.svg")} />
-              <NotFound.Text>Nenhum indicado foi concluido com sucesso ainda</NotFound.Text>
+              <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>
+                Nenhum indicado foi concluido com sucesso ainda
+              </NotFound.Text>
             </NotFound.Card>
           </NotFound>
         </Affiliate.Card>

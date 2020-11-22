@@ -13,7 +13,7 @@ export function RegisterContainer() {
   const [user, setUser] = useState({
     ...history.location.state.user,
     full_name: "",
-    user_id: "",
+    id: "",
     source: "nuppin",
   });
   const [error, setError] = useState("");

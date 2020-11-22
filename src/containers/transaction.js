@@ -14,7 +14,7 @@ export function BalanceContainer() {
   const { user } = state;
   const [error, setError] = useState("");
   const [processing, setProcessing] = useState(false);
-  const { data } = useSWR(`${USER_TRANSACTION}/${user.user_id}`);
+  const { data } = useSWR(`${USER_TRANSACTION}/${user.id}`);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,9 +23,9 @@ export function BalanceContainer() {
   function handleCashOut() {
     setProcessing(true);
     axios
-      .post(CASHOUT, { user_id: user.user_id })
+      .post(CASHOUT, { id: user.id })
       .then((res) => {
-        mutate(`${USER_TRANSACTION}/${user.user_id}`);
+        mutate(`${USER_TRANSACTION}/${user.id}`);
         setProcessing(false);
       })
       .catch((error) => {
