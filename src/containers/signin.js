@@ -46,7 +46,7 @@ export function SignInContainer() {
         }
       })
       .catch((error) => {
-        setError(error.message);
+        setError("Houve algum erro, tente novamente");
         setProcessing(false);
       });
   };
@@ -67,7 +67,7 @@ export function SignInContainer() {
         }
       })
       .catch((error) => {
-        setError(error.message);
+        setError("Houve algum erro, tente novamente");
         setProcessing(false);
       });
   };

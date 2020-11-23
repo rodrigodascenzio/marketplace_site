@@ -31,6 +31,9 @@ export function ConfirmCodeContainer() {
 
   const isInvalid = user.code_sent.length < 6;
 
+  const email = history.location.state.path === VERIFY_CODE_EMAIL || history.location.state.path === CHANGE_EMAIL;
+  const sms = history.location.state.path === VERIFY_CODE_SMS || history.location.state.path === CHANGE_PHONE_NUMBER;
+
   const handleSignin = (event) => {
     event.preventDefault();
     setProcessing(true);
@@ -40,7 +43,7 @@ export function ConfirmCodeContainer() {
           setLocalStorage(res.data);
           history.push(ROUTES.HOME);
         } else if (res.data === 1) {
-          if (history.location.state.path === VERIFY_CODE_EMAIL || history.location.state.path === CHANGE_EMAIL) {
+          if (email) {
             if (history.location.state.path === VERIFY_CODE_EMAIL) {
               history.push(ROUTES.REGISTER, {
                 user: { email: user.id },
@@ -48,10 +51,7 @@ export function ConfirmCodeContainer() {
             } else if (history.location.state.path === CHANGE_EMAIL) {
               history.push(ROUTES.PROFILE);
             }
-          } else if (
-            history.location.state.path === VERIFY_CODE_SMS ||
-            history.location.state.path === CHANGE_PHONE_NUMBER
-          ) {
+          } else if (sms) {
             if (history.location.state.path === VERIFY_CODE_SMS) {
               history.push(ROUTES.REGISTER, {
                 user: { phone_number: user.id },
@@ -61,12 +61,12 @@ export function ConfirmCodeContainer() {
             }
           }
         } else {
-          setError("Erro ao confirmar o codigo");
+          setError(res.data === 2 ? "Código errado" : "Código expirado");
           setProcessing(false);
         }
       })
       .catch((error) => {
-        setError(error.message);
+        setError("Houve algum erro. Tente novamente");
         setProcessing(false);
       });
   };
@@ -76,8 +76,8 @@ export function ConfirmCodeContainer() {
       <Form>
         <Form.Title>Confirme o código</Form.Title>
         {error && <Form.Error data-testid="error">{error}</Form.Error>}
-        <Form.TextSmall>{`Foi enviado um código ${user.id ? "SMS" : ""} de verificação para o seu ${
-          user.id ? "número" : "email"
+        <Form.TextSmall>{`Foi enviado um código ${sms ? "SMS" : ""} de verificação para o seu ${
+          sms ? "número" : "email"
         }. Insira esse código no campo abaixo para se entrar`}</Form.TextSmall>
         <Form.Base onSubmit={handleSignin} method="POST">
           <Form.Input
@@ -90,8 +90,8 @@ export function ConfirmCodeContainer() {
           </Form.Submit>
         </Form.Base>
 
-        <Form.TextSmall>{`Esse código ${user.id ? "SMS" : ""} pode demorar alguns minutos para chegar. ${
-          user.id ? "Verifique também na sua caixa de spam / lixo eletronico." : ""
+        <Form.TextSmall>{`Esse código ${sms ? "SMS" : ""} pode demorar alguns minutos para chegar. ${
+          email ? "Verifique também na sua caixa de spam / lixo eletronico." : ""
         }`}</Form.TextSmall>
 
         <Form.Text style={{ cursor: "pointer" }} onClick={() => history.goBack()}>

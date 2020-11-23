@@ -26,6 +26,18 @@ export function AffiliateContainer() {
 
   console.log(data);
 
+  function returnStatus(status) {
+    switch (status) {
+      case "canceled":
+        return <Affiliate.Text>Não foi pago</Affiliate.Text>;
+      case "paid":
+      case "concluded":
+        return <Affiliate.Text>Pago</Affiliate.Text>;
+      default:
+        return <Affiliate.Text>Aguardando pagamento</Affiliate.Text>;
+    }
+  }
+
   if (!data.length) {
     return (
       <Affiliate>
@@ -51,8 +63,12 @@ export function AffiliateContainer() {
           {data.map((item) => (
             <Affiliate.Item onClick={(e) => handleClickItem(item.id)}>
               <Affiliate.InnerItem>
-                <Affiliate.SubText>ID</Affiliate.SubText>
-                <Affiliate.Text>{item.id}</Affiliate.Text>
+                <Affiliate.SubText>Email</Affiliate.SubText>
+                <Affiliate.Text>{item.reference}</Affiliate.Text>
+              </Affiliate.InnerItem>
+              <Affiliate.InnerItem style={{ margin: "0 10px", flexGrow: "1" }}>
+                <Affiliate.SubText>Status</Affiliate.SubText>
+                {returnStatus(item.status)}
               </Affiliate.InnerItem>
               <Affiliate.InnerItem>
                 <Affiliate.SubText>Data</Affiliate.SubText>

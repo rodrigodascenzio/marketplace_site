@@ -27,13 +27,14 @@ export function AffiliateFormContainer({ rerender }) {
             rerender();
             setcompany({ ...company, reference: "" });
           }
+          setError(false);
         } else {
-          alert("Não foi possivel cadastrar, email já indicado ou usuário já cadastrado!");
+          setError("Não foi possivel cadastrar, email já indicado ou usuário já cadastrado!");
         }
         setProcessing(false);
       })
       .catch((error) => {
-        setError(error.message);
+        setError("Houve algum erro, tente novamente");
         setProcessing(false);
       });
   };
@@ -56,7 +57,7 @@ export function AffiliateFormContainer({ rerender }) {
       </Form.Base>
 
       <Form.TextSmall>
-        Para a sua indicação ser ativada, o responsavel pelo email terá até 7 dias para efetuar o pagamento.
+        Para a sua indicação ser ativada, o responsável pelo email tem até 7 dias para efetuar o cadastro e o pagamento.
       </Form.TextSmall>
     </Form>
   );

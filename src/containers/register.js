@@ -31,7 +31,7 @@ export function RegisterContainer() {
         }
       })
       .catch((error) => {
-        setError(error.message);
+        setError("Houve algum erro, tente novamente");
         setProcessing(false);
       });
   };

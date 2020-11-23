@@ -68,7 +68,7 @@ export function BalanceContainer() {
           {error && <Balance.Error>{error}</Balance.Error>}
 
           <Balance.Text>{mMoney(data.balance.amount)}</Balance.Text>
-          <Balance.Submit disabled={processing || parseInt(data.balance.amount) < 2} onClick={handleCashOut}>
+          <Balance.Submit disabled={processing || parseInt(data.balance.amount) < 50} onClick={handleCashOut}>
             {processing ? "Processando..." : "SACAR"}
           </Balance.Submit>
 
