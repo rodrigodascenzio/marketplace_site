@@ -42,7 +42,7 @@ export function BalanceContainer() {
         <Indication.Card style={{ display: "flex", justifyContent: "center" }}>
           <NotFound>
             <NotFound.Card>
-              <NotFound.Img src={require("../images/misc/error.svg")} />
+              <NotFound.Img src={require("../images/misc/Report.svg")} />
               <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>Sem histórico de transações...</NotFound.Text>
             </NotFound.Card>
           </NotFound>

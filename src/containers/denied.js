@@ -9,7 +9,7 @@ export function DeniedContainer() {
   return (
     <NotFound>
       <NotFound.Card>
-        <NotFound.Img src={require("../images/misc/error.svg")} />
+        <NotFound.Img src={require("../images/misc/Security.svg")} />
         <NotFound.Text>Usuário não cadastrado no programa de afiliados..</NotFound.Text>
         <NotFound.SubText>Entre em contato através do email: afiliado@nuppin.com</NotFound.SubText>
       </NotFound.Card>

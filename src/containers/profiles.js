@@ -70,9 +70,9 @@ export function ProfileContainer() {
                 <Profile.Group marginbottomtitle={data.photo ? "" : "51"}>
                   <Profile.Title>Perfil</Profile.Title>
                   {data.photo && (
-                    <Profile.data>
+                    <Profile.User>
                       <Profile.Picture src={data.photo} />
-                    </Profile.data>
+                    </Profile.User>
                   )}
                   <Profile.Input
                     type="text"

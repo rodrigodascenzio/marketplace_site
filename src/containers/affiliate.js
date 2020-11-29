@@ -32,7 +32,7 @@ export function AffiliateContainer() {
         return <Affiliate.Text>Não foi pago</Affiliate.Text>;
       case "paid":
       case "concluded":
-        return <Affiliate.Text>Pago</Affiliate.Text>;
+        return <Affiliate.Text>Ativo</Affiliate.Text>;
       default:
         return <Affiliate.Text>Aguardando pagamento</Affiliate.Text>;
     }
@@ -44,7 +44,7 @@ export function AffiliateContainer() {
         <Affiliate.Card>
           <NotFound>
             <NotFound.Card>
-              <NotFound.Img src={require("../images/misc/error.svg")} />
+              <NotFound.Img src={require("../images/misc/Analytics.svg")} />
               <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>
                 Nenhum indicado foi concluido com sucesso ainda
               </NotFound.Text>

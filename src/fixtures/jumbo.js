@@ -43,20 +43,20 @@ export const jumbo1 = [
       },
     ],
   },
-  {
-    background: "#5e35b1",
-    data: [
-      {
-        id: 99,
-        title: "Ganhe uma grana extra",
-        subTitle:
-          "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
-        image: require("../images/misc/payment.svg"),
-        alt: "",
-        direction: "row-reverse",
-      },
-    ],
-  },
+  // {
+  //   background: "#5e35b1",
+  //   data: [
+  //     {
+  //       id: 99,
+  //       title: "Ganhe uma grana extra",
+  //       subTitle:
+  //         "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
+  //       image: require("../images/misc/payment.svg"),
+  //       alt: "",
+  //       direction: "row-reverse",
+  //     },
+  //   ],
+  // },
 ];
 
 export const jumbo2 = [
@@ -104,20 +104,20 @@ export const jumbo2 = [
       },
     ],
   },
-  {
-    background: "#5e35b1",
-    data: [
-      {
-        id: 99,
-        title: "Ganhe uma grana extra",
-        subTitle:
-          "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
-        image: require("../images/misc/payment.svg"),
-        alt: "",
-        direction: "row-reverse",
-      },
-    ],
-  },
+  // {
+  //   background: "#5e35b1",
+  //   data: [
+  //     {
+  //       id: 99,
+  //       title: "Ganhe uma grana extra",
+  //       subTitle:
+  //         "Aproveite nosso programa de afiliados para fazer uma grana extra. Indique novos parceiros e ganhe uma comissão mensal por cada parceiro que trouxer.",
+  //       image: require("../images/misc/payment.svg"),
+  //       alt: "",
+  //       direction: "row-reverse",
+  //     },
+  //   ],
+  // },
 ];
 
 export const jumbo3 = [
@@ -141,9 +141,9 @@ export const jumbo3 = [
     data: [
       {
         id: 2,
-        title: "Mantenha as parceirias",
+        title: "Mantenha as parcerias",
         subTitle:
-          "Após conseguir novos parceiros, eles vão gerar comissão para você todo mês. Então é importante manter uma boa relação, acompanhar, saber como está, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
+          "Após conseguir novos parceiros para o Nuppin, eles vão gerar comissão para você mês a mês. Então é importante manter uma boa relação, acompanhar, saber como está, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
         image: require("../images/misc/business_meeting.svg"),
         alt: "",
         direction: "row",

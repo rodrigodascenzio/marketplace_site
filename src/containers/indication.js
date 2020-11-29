@@ -33,7 +33,7 @@ export function IndicationContainer() {
             <Indication.Group>
               <NotFound>
                 <NotFound.Card>
-                  <NotFound.Img src={require("../images/misc/error.svg")} />
+                  <NotFound.Img src={require("../images/misc/Get_Started.svg")} />
                   <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>Sem indicações pendentes...</NotFound.Text>
                 </NotFound.Card>
               </NotFound>

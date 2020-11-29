@@ -58,12 +58,9 @@ export function App() {
       </Router>
     );
   } else if (domain === ROUTES.AFFILIATE) {
-    if (user && !user.is_affiliate) {
+    if (user && !parseInt(user.is_affiliate)) {
       return (
         <Router>
-          <ProtectedRoute exact user={user} path={ROUTES.PROFILE}>
-            <Profile />
-          </ProtectedRoute>
           <ProtectedRoute user={true} path={ROUTES.HOME}>
             <Denied />
           </ProtectedRoute>
