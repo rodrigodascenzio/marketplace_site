@@ -56,7 +56,7 @@ switch (domain) {
   case ROUTES.NUPPIN:
     theme = nuppin;
     break;
-  case ROUTES.AFFILIATE:
+  case ROUTES.VENDAS:
     theme = affiliate;
     break;
 }

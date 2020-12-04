@@ -21,4 +21,4 @@ export const PARCEIRO_SITE = "https://parceiro.nuppin.com";
 export const AFILIADO_SITE = "https://afiliado.nuppin.com";
 export const PARCEIRO = "parceiro";
 export const NUPPIN = "nuppin";
-export const AFFILIATE = "localhost:3000";
+export const VENDAS = "vendas";

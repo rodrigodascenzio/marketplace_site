@@ -4,6 +4,20 @@ import { color } from "../../../utils/colors";
 import { Link as ReachRouterLink } from "react-router-dom";
 
 export const Container = styled.div`
+  background-color: ${color.whiteLight};
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 50px auto;
+  max-width: 450px;
+  padding: 60px 68px 40px;
+  margin-bottom: 100px;
+`;
+
+export const Container2 = styled.div`
   background: ${color.whiteLight};
   border: 2px solid ${color.white};
   display: flex;
@@ -73,7 +87,7 @@ export const Input = styled.input`
 `;
 
 export const Submit = styled.button`
-  background: #e50914;
+  background: #5e35b1;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Affiliate, Loading, NotFound } from "../components";
-import { AFFILIATE } from "../constants/apiRoutes";
+import { VENDAS } from "../constants/apiRoutes";
 import * as ROUTES from "../constants/routes";
 import useSWR from "swr";
 import { Context } from "../store/Store";
@@ -12,7 +12,7 @@ export function AffiliateContainer() {
   const { state } = useContext(Context);
   const { user } = state;
 
-  const { data } = useSWR(`${AFFILIATE}/${user.id}`);
+  const { data } = useSWR(`${VENDAS}/${user.id}`);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,7 +29,7 @@ export function AffiliateContainer() {
   function returnStatus(status) {
     switch (status) {
       case "canceled":
-        return <Affiliate.Text>Não foi pago</Affiliate.Text>;
+        return <Affiliate.Text>Inativo</Affiliate.Text>;
       case "paid":
       case "concluded":
         return <Affiliate.Text>Ativo</Affiliate.Text>;
@@ -46,7 +46,7 @@ export function AffiliateContainer() {
             <NotFound.Card>
               <NotFound.Img src={require("../images/misc/Analytics.svg")} />
               <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>
-                Nenhum indicado foi concluido com sucesso ainda
+                Nenhum cadastro foi concluido com sucesso ainda
               </NotFound.Text>
             </NotFound.Card>
           </NotFound>

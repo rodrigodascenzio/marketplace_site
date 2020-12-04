@@ -12,14 +12,16 @@ export default function Home() {
     <>
       <HeaderContainer bg={require("../images/misc/misc_bk1.jpg")}>
         <Feature>
-          <Feature.Title>Ganhe dinheiro com o nosso programa de afiliados</Feature.Title>
-          <Feature.SubTitle>Gere uma receita recorrente, a melhor forma de fazer uma grana extra.</Feature.SubTitle>
-          <OptForm.ButtonDefault>Cadastre-se</OptForm.ButtonDefault>
+          <Feature.Title>Monte sua carteira de clientes vendendo online</Feature.Title>
+          <Feature.SubTitle>
+            Receba sua comissão mês a mês, a melhor forma de ganhar dinheiro sem sair de casa
+          </Feature.SubTitle>
+          <OptForm.ButtonDefault>ENTRAR</OptForm.ButtonDefault>
         </Feature>
       </HeaderContainer>
 
       <JumbotronContainer jumbo={jumbo3} />
-      <FaqsContainer faq={faq3} />
+      {/* <FaqsContainer faq={faq3} /> */}
       <FooterContainer />
     </>
   );

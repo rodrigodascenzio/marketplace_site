@@ -57,7 +57,7 @@ export function App() {
         </Switch>
       </Router>
     );
-  } else if (domain === ROUTES.AFFILIATE) {
+  } else if (domain === ROUTES.VENDAS) {
     if (user && !parseInt(user.is_affiliate)) {
       return (
         <Router>

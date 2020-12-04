@@ -4,7 +4,7 @@ export const jumbo1 = [
     data: [
       {
         id: 1,
-        title: "Conte com a gente",
+        title: "Sejá visto",
         subTitle:
           "Temos uma plataforma onde unimos varios empreendedores com seus negócios de uma maneira local para atrair um novo publico e dar mais visibilidade para cada negócio e consequentemente aumentar as vendas",
         image: require("../images/misc/growth_2.svg"),
@@ -21,7 +21,7 @@ export const jumbo1 = [
         id: 2,
         title: "Tenha seu próprio site",
         subTitle:
-          "Além de poder fazer parte desse grupo, você pode ter o seu próprio site em poucos cliques, e divulgar seu negócio de uma forma mais direcionada, além disso, pode ainda divulgar esse seu site para os cliente que encontram sua loja dentro do nuppin, ou focar apenas no site",
+          "Além de poder fazer parte desse grupo, você pode ter o seu próprio site em poucos toques, e divulgar seu negócio de uma forma mais direcionada, além disso, pode ainda divulgar esse seu site para os cliente que encontram sua loja dentro do Nuppin.",
         image: require("../images/misc/web_dev.svg"),
         alt: "",
         direction: "row-reverse",
@@ -65,9 +65,9 @@ export const jumbo2 = [
     data: [
       {
         id: 1,
-        title: "Conheça os negócios da sua regição",
+        title: "Conheça os negócios da sua região",
         subTitle:
-          "Tem muitos lugares legais que ainda não tem muita divulgação no internet, estamos fazendo nosso melhor para ajudar o micro e pequeno empreendedor a conseguir isso.",
+          "Tem muitos lugares legais que ainda não tem muita divulgação na internet, estamos fazendo nosso melhor para ajudar o micro e pequeno empreendedor a conseguir isso.",
         image: require("../images/misc/welcome.svg"),
         alt: "",
         direction: "row-reverse",
@@ -128,7 +128,7 @@ export const jumbo3 = [
         id: 1,
         title: "Trabalhe a hora que quiser, onde quiser",
         subTitle:
-          "O programa de afiliados te da a oportunidade de poder fazer seu próprio horario, definir suas próprias metas e te gerar uma renda extra todo mês.",
+          "Os vendedores do Nuppin tem a flexibilidade de fazer seu próprio horario, podendo até intercalar com outros trabalhos. Trabalhe com mais tranquilidade, gerando receita de qualquer lugar.",
         image: require("../images/misc/support.svg"),
         alt: "",
         direction: "row-reverse",
@@ -156,9 +156,9 @@ export const jumbo3 = [
     data: [
       {
         id: 3,
-        title: "Estamos sempre atento a nossa volta",
+        title: "Estamos sempre atento a novos talentos",
         subTitle:
-          "Para quem estiver indo bem no nosso programa de afiliados e tiver interesse em fazer parte da nossa equipe, sempre vão surgir boas oportunidades.",
+          "Para quem estiver indo bem nas vendas, temos um plano de carreira para desenvolver o seu melhor na área que mais gosta ou que deseja atuar",
         image: require("../images/misc/analyse.svg"),
         alt: "",
         direction: "row-reverse",
@@ -166,3 +166,50 @@ export const jumbo3 = [
     ],
   },
 ];
+
+// export const jumbo3 = [
+//   {
+//     background: "#5e35b1",
+//     data: [
+//       {
+//         id: 1,
+//         title: "Trabalhe a hora que quiser, onde quiser",
+//         subTitle:
+//           "O programa de afiliados te da a oportunidade de poder fazer seu próprio horario, definir suas próprias metas e te gerar uma renda extra todo mês.",
+//         image: require("../images/misc/support.svg"),
+//         alt: "",
+//         direction: "row-reverse",
+//       },
+//     ],
+//   },
+
+//   {
+//     background: "#5e35b1",
+//     data: [
+//       {
+//         id: 2,
+//         title: "Mantenha as parcerias",
+//         subTitle:
+//           "Após conseguir novos parceiros para o Nuppin, eles vão gerar comissão para você mês a mês. Então é importante manter uma boa relação, acompanhar, saber como está, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
+//         image: require("../images/misc/business_meeting.svg"),
+//         alt: "",
+//         direction: "row",
+//       },
+//     ],
+//   },
+
+//   {
+//     background: "#5e35b1",
+//     data: [
+//       {
+//         id: 3,
+//         title: "Estamos sempre atento a nossa volta",
+//         subTitle:
+//           "Para quem estiver indo bem no nosso programa de afiliados e tiver interesse em fazer parte da nossa equipe, sempre vão surgir boas oportunidades.",
+//         image: require("../images/misc/analyse.svg"),
+//         alt: "",
+//         direction: "row-reverse",
+//       },
+//     ],
+//   },
+// ];

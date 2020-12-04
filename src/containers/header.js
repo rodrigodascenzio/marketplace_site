@@ -40,7 +40,7 @@ export function HeaderContainer({ children, bg, ...restProps }) {
             <Header.ButtonLink href={ROUTES.PARCEIRO_SITE}>Seja um parceiro</Header.ButtonLink>
           </Header.Group>
         )}
-        {domain === ROUTES.AFFILIATE && (
+        {domain === ROUTES.VENDAS && (
           <Header.Group>
             {user ? (
               <>

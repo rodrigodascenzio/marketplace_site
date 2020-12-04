@@ -46,7 +46,7 @@ export const TextSmall = styled.p`
 `;
 
 export const Submit = styled.button`
-  background: #e50914;
+  background: #5e35b1;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;

@@ -3,6 +3,7 @@ import axios from "../utils/axios";
 import { SWRConfig } from "swr";
 import { seo } from "../helpers/seo";
 import { Loading } from "../components";
+import { USERS } from "../../src/constants/apiRoutes";
 
 const initialState = {
   domain: null,
@@ -22,9 +23,20 @@ const Store = ({ children }) => {
     if (user) {
       axios.defaults.headers.Authorization = `Bearer ${user.refresh_token}`;
     }
-
-    setState({ ...state, user, domain });
-    setLoading(false);
+    if (user) {
+      axios
+        .get(`${USERS}/${user.id}`)
+        .then((res) => {
+          setLocalStorage({ ...user, ...res.data });
+        })
+        .then((res) => {
+          setState({ ...state, user, domain });
+          setLoading(false);
+        });
+    } else {
+      setState({ ...state, user, domain });
+      setLoading(false);
+    }
   }, []);
 
   function setLocalStorage(user) {

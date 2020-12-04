@@ -1,21 +1,21 @@
 export const faq1 = [
   {
     id: 1,
-    header: "O que é o nuppin?",
+    header: "O que é o Nuppin?",
     body:
       "Nuppin é uma plataforma onde micro e pequeno empreendedores tem ferramentas para publicar e gerenciar uma loja online. Venda mais, encontre mais clientes, aprenda novas tecnicas de como gerenciar seu negócio com a gente!",
   },
   {
     id: 2,
-    header: "Quanto o nuppin custa?",
+    header: "Quanto o Nuppin custa?",
     body:
-      "Tenha acesso ao nuppin no seu smartphone, tablet ou computador. Os planos do nuppin iniciam no valor de R$19,90. Temos 3 planos para necessidades diferentes",
+      "Tenha acesso ao Nuppin no seu smartphone, tablet ou computador. Os planos do Nuppin iniciam no valor de R$19,90. Temos 3 planos para necessidades diferentes",
   },
   {
     id: 3,
     header: "Eu pago taxa para usar?",
     body:
-      "Existem diversar formas de trabalhar com o nuppin, com ou sem taxa. Se você usar o plano de lojas em grupo, tem uma taxa de 9% sobre as vendas, isso por causa do custo do marketing que temos nesse canal para te trazer mais clientes. Mas para quem não quer usar esse canal, temos os planos com site ou aplicativo próprio, onde não existe taxa sobre as vendas.",
+      "Existem diversar formas de trabalhar com o Nuppin, com ou sem taxa. Se você usar o plano de lojas em grupo, tem uma taxa de 9% sobre as vendas, isso por causa do custo do marketing que temos nesse canal para te trazer mais clientes. Mas para quem não quer usar esse canal, temos os planos com site ou aplicativo próprio, onde não existe taxa sobre as vendas.",
   },
   {
     id: 4,
@@ -34,9 +34,9 @@ export const faq1 = [
 export const faq2 = [
   {
     id: 1,
-    header: "Como comprar no nuppin?",
+    header: "Como comprar no Nuppin?",
     body:
-      "Para comprar no nuppin, você precisa fazer o download do aplicativo na PlayStore. Após ser instalado, você vai criar a sua conta, colocar seu endereço e assim vai aparecer os estabelecimentos perto de você para escolher o que precisa.",
+      "Para comprar no Nuppin, você precisa fazer o download do aplicativo na PlayStore. Após ser instalado, você vai criar a sua conta, colocar seu endereço e assim vai aparecer os estabelecimentos perto de você para escolher o que precisa.",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const faq2 = [
     id: 4,
     header: "Como faço para me tornar um parceiro?",
     body:
-      "Para isso, você precisa fazer o download do aplicativo do nuppin para empresas, lá você pode usar o mesmo cadastro que usou no nuppin. Vai inserir os dados do seu negócio, escolher o plano, organizar os produtos/serviços e já pode ficar online. Bem simples.\nMais informações em: https://parceiro.nuppin.com",
+      "Para isso, você precisa fazer o download do aplicativo do Nuppin para empresas, lá você pode usar o mesmo cadastro que usou no Nuppin. Vai inserir os dados do seu negócio, escolher o plano, organizar os produtos/serviços e já pode ficar online. Bem simples.\nMais informações em: https://parceiro.nuppin.com",
   },
 ];
 

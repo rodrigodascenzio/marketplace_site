@@ -2,7 +2,7 @@ import * as ROUTES from "../constants/routes";
 
 export function seo(type) {
   const seo_parceiro = {
-    title: "Parceiro Nuppin",
+    title: "Nuppin • Sejá um parceiro",
     metaDescription: " Plataforma Nuppin Empresas",
     favicon: require("../images/misc/company_nuppin.png"),
   };
@@ -13,8 +13,8 @@ export function seo(type) {
   };
 
   const seo_affiliate = {
-    title: "Nuppin",
-    metaDescription: "Ganhe dinheiro sendo no programa de afiliados do nuppin",
+    title: "Nuppin • Vendas",
+    metaDescription: "Área de vendas para membros de equipe do Nuppin",
     favicon: require("../images/misc/nuppin.png"),
   };
 
@@ -27,7 +27,7 @@ export function seo(type) {
     case ROUTES.NUPPIN:
       data = seo_nuppin;
       break;
-    case ROUTES.AFFILIATE:
+    case ROUTES.VENDAS:
       data = seo_affiliate;
       break;
   }

@@ -40,24 +40,24 @@ export function AffiliateFormContainer({ rerender }) {
   };
 
   return (
-    <Form>
-      <Form.Title>Indicar Parceiro</Form.Title>
+    <Form type={true}>
+      <Form.Title>Cadastro</Form.Title>
       {error && <Form.Error>{error}</Form.Error>}
 
       <Form.Base onSubmit={handleEmail} method="POST">
         <Form.Input
           type="email"
-          placeholder="indicado@email.com"
+          placeholder="parceiro@email.com"
           value={company.reference}
           onChange={({ target }) => setcompany({ ...company, reference: target.value })}
         />
         <Form.Submit disabled={isInvalid || processing} type="submit">
-          {processing ? "Processando..." : "INDICAR"}
+          {processing ? "Processando..." : "CADASTRAR"}
         </Form.Submit>
       </Form.Base>
 
       <Form.TextSmall>
-        Para a sua indicação ser ativada, o responsável pelo email tem até 7 dias para efetuar o cadastro e o pagamento.
+        Para seu cadastro ser ativado, o responsável pelo email tem até 7 dias para efetuar o cadastro e o pagamento.
       </Form.TextSmall>
     </Form>
   );

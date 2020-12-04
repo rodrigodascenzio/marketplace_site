@@ -29,12 +29,12 @@ export function IndicationContainer() {
             }}
           />
           <Indication.ContentBlock>
-            <Indication.Title>Indicados</Indication.Title>
+            <Indication.Title>Parceiros cadastrados</Indication.Title>
             <Indication.Group>
               <NotFound>
                 <NotFound.Card>
                   <NotFound.Img src={require("../images/misc/Get_Started.svg")} />
-                  <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>Sem indicações pendentes...</NotFound.Text>
+                  <NotFound.Text style={{ color: "#222", fontSize: "14px" }}>Sem cadastros pendentes...</NotFound.Text>
                 </NotFound.Card>
               </NotFound>
             </Indication.Group>
@@ -53,7 +53,7 @@ export function IndicationContainer() {
           }}
         />
         <Indication.ContentBlock>
-          <Indication.Title>Indicados</Indication.Title>
+          <Indication.Title>Parceiros cadastrados</Indication.Title>
           <Indication.Group>
             {data.map((item) => (
               <Indication.Item>
