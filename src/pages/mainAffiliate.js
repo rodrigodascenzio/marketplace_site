@@ -14,7 +14,7 @@ export default function Home() {
         <Feature>
           <Feature.Title>Monte sua carteira de clientes vendendo online</Feature.Title>
           <Feature.SubTitle>
-            Receba sua comissão mês a mês, a melhor forma de ganhar dinheiro sem sair de casa
+            Encontre clientes, administre seus contatos, gerencie sua conta e receba comissão de forma recorrente.
           </Feature.SubTitle>
           <OptForm.ButtonDefault>ENTRAR</OptForm.ButtonDefault>
         </Feature>

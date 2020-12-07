@@ -69,11 +69,11 @@ export function ProfileContainer() {
               <Profile.Base onSubmit={handleUserInfo}>
                 <Profile.Group marginbottomtitle={data.photo ? "" : "51"}>
                   <Profile.Title>Perfil</Profile.Title>
-                  {data.photo && (
+                  {/* {data.photo && (
                     <Profile.User>
                       <Profile.Picture src={data.photo} />
                     </Profile.User>
-                  )}
+                  )} */}
                   <Profile.Input
                     type="text"
                     placeholder="Nome"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
+import * as ROUTES from "../constants/routes";
 
 export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
   return (
@@ -39,7 +40,7 @@ export function ProtectedRoute({ user, children, ...rest }) {
           return (
             <Redirect
               to={{
-                pathname: "signin",
+                pathname: ROUTES.SIGN_IN,
                 state: { from: location },
               }}
             />

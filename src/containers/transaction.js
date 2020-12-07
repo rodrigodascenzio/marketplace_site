@@ -73,8 +73,8 @@ export function BalanceContainer() {
           </Balance.Submit>
 
           <Balance.TextSmall>
-            Após efetuar o saque, leva de 5 a 10 dias para verificar e transferir para sua conta. O minimo para saque é
-            de R$50,00. Cada saque possui uma taxa de R$5,00.
+            Após efetuar o saque, leva até 5 dias para verificar e transferir para sua conta. O mínimo para saque é
+            R$50,00.
           </Balance.TextSmall>
         </Balance>
 

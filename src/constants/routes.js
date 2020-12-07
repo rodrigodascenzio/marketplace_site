@@ -1,20 +1,15 @@
 export const HOME = "/";
-export const BROWSE = "/browse";
-export const SIGN_IN = "/signin";
-export const PRODUCT_DETAIL = "/product_detail";
-export const CART = "/cart";
-export const ORDERS = "/orders";
-export const ORDER_DETAIL = "/order_detail";
-export const CONFIRM_CODE = "/confirm_code";
-export const REGISTER = "/register";
-export const NOT_FOUND = "/not_found";
-export const PROFILE = "/profile";
+export const SIGN_IN = "/entrar";
+export const CONFIRM_CODE = "/codigo";
+export const REGISTER = "/registrar";
+export const NOT_FOUND = "/error";
+export const PROFILE = "/perfil";
 export const EMAIL = "/email";
 export const SMS = "/sms";
-export const TERM = "/terms";
-export const DASHBOARD = "/dashboard";
-export const BALANCE = "/balance";
-export const AFFILIATES_STORE = "/affiliate";
+export const TERM = "/termos";
+export const DASHBOARD = "/inicio";
+export const BALANCE = "/conta";
+export const AFFILIATES_STORE = "/parceiros";
 
 //domain
 export const PARCEIRO_SITE = "https://parceiro.nuppin.com";

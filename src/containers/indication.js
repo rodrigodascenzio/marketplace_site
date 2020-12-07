@@ -29,7 +29,6 @@ export function IndicationContainer() {
             }}
           />
           <Indication.ContentBlock>
-            <Indication.Title>Parceiros cadastrados</Indication.Title>
             <Indication.Group>
               <NotFound>
                 <NotFound.Card>

@@ -47,12 +47,12 @@ export function HeaderContainer({ children, bg, ...restProps }) {
                 <Header.OrderIcon
                   size="24"
                   onClick={handleClickAffiliate}
-                  nav={document.location.pathname === ROUTES.ORDERS}
+                  nav={document.location.pathname === ROUTES.AFFILIATES_STORE}
                 />
                 <Header.CartIcon
                   size="24"
                   onClick={handleClickBalance}
-                  nav={document.location.pathname === ROUTES.CART}
+                  nav={document.location.pathname === ROUTES.BALANCE}
                 />
 
                 <Header.Profile onClick={handleClickProfile}>

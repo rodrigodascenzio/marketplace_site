@@ -9,6 +9,12 @@ export const Container = styled.div`
   }
 `;
 
+export const Title = styled.p`
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+`;
+
 export const Card = styled.div`
   background-color: ${color.whiteLight};
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -33,12 +39,6 @@ export const ContentBlock = styled.div`
     margin-left: 30px;
     border: 2px solid ${color.white};
   }
-`;
-
-export const Title = styled.p`
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 30px 0;
 `;
 
 export const Text = styled.p`

@@ -31,10 +31,10 @@ export function AffiliateContainer() {
       case "canceled":
         return <Affiliate.Text>Inativo</Affiliate.Text>;
       case "paid":
-      case "concluded":
+      case "completed":
         return <Affiliate.Text>Ativo</Affiliate.Text>;
       default:
-        return <Affiliate.Text>Aguardando pagamento</Affiliate.Text>;
+        return <Affiliate.Text>Pendente</Affiliate.Text>;
     }
   }
 
@@ -58,15 +58,15 @@ export function AffiliateContainer() {
   return (
     <Affiliate>
       <Affiliate.Card>
-        <Affiliate.Title>Indicados ativos</Affiliate.Title>
+        <Affiliate.Title>Lista de Parceiros</Affiliate.Title>
         <Affiliate.Group>
           {data.map((item) => (
             <Affiliate.Item onClick={(e) => handleClickItem(item.id)}>
-              <Affiliate.InnerItem>
+              <Affiliate.InnerItem style={{ minWidth: "50%", margin: "0 10px 0 0" }}>
                 <Affiliate.SubText>Email</Affiliate.SubText>
                 <Affiliate.Text>{item.reference}</Affiliate.Text>
               </Affiliate.InnerItem>
-              <Affiliate.InnerItem style={{ margin: "0 10px", flexGrow: "1" }}>
+              <Affiliate.InnerItem style={{ flexGrow: "1" }}>
                 <Affiliate.SubText>Status</Affiliate.SubText>
                 {returnStatus(item.status)}
               </Affiliate.InnerItem>

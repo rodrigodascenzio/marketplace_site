@@ -128,7 +128,7 @@ export const jumbo3 = [
         id: 1,
         title: "Trabalhe a hora que quiser, onde quiser",
         subTitle:
-          "Os vendedores do Nuppin tem a flexibilidade de fazer seu próprio horario, podendo até intercalar com outros trabalhos. Trabalhe com mais tranquilidade, gerando receita de qualquer lugar.",
+          "Os vendedores do Nuppin tem a flexibilidade de fazer seu próprio horário, podendo até intercalar com outros trabalhos. Trabalhe com mais tranquilidade, gerando receita de qualquer lugar.",
         image: require("../images/misc/support.svg"),
         alt: "",
         direction: "row-reverse",
@@ -143,7 +143,7 @@ export const jumbo3 = [
         id: 2,
         title: "Mantenha as parcerias",
         subTitle:
-          "Após conseguir novos parceiros para o Nuppin, eles vão gerar comissão para você mês a mês. Então é importante manter uma boa relação, acompanhar, saber como está, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
+          "Após conseguir novos parceiros para o Nuppin, eles vão gerar comissão para você mês a mês. Então é importante manter uma boa relação, acompanhar, saber como estão, etc.. Porque quanto mais felizes eles estiverem, mais tempo vão ficar e mais a sua renda fica garantida.",
         image: require("../images/misc/business_meeting.svg"),
         alt: "",
         direction: "row",
