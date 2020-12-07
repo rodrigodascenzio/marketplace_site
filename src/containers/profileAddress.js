@@ -53,7 +53,7 @@ export function ProfileAddressContainer({ address, callback }) {
   return (
     <>
       <Profile.Base onSubmit={handleUserAddress} style={callback ? { maxWidth: "600px", margin: "10px auto" } : {}}>
-        <Profile.Group marginbottomtitle={user.photo ? "139" : ""}>
+        <Profile.Group>
           <Profile.Title>Endereço</Profile.Title>
           <Profile.Input
             type="text"
