@@ -41,7 +41,7 @@ export function AffiliateFormContainer({ rerender }) {
 
   return (
     <Form type={true}>
-      <Form.Title>Cadastro</Form.Title>
+      <Form.Title style={{ textAlign: "center" }}>Cadastro</Form.Title>
       {error && <Form.Error>{error}</Form.Error>}
 
       <Form.Base onSubmit={handleEmail} method="POST">

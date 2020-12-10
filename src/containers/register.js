@@ -54,7 +54,7 @@ export function RegisterContainer() {
         </Form.Base>
         <Form.TextSmall>
           Ao se registrar você confirma que está de acordo com o nosso termo de uso.
-          <Form.Link to="/terms"> Ler termos de uso.</Form.Link>
+          <Form.Link to="/termos"> Ler termos de uso.</Form.Link>
         </Form.TextSmall>
       </Form>
     </>

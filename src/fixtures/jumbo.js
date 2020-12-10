@@ -97,7 +97,7 @@ export const jumbo2 = [
         id: 3,
         title: "Simplicidade",
         subTitle:
-          "Em poucos toques você já verifica se tem o que você deseja proximo a você e ao encontrar o que precisa, é muito simples de fazer o seu pedido. Baixe o app e experimente!",
+          "Em poucos toques você já verifica se tem o que você deseja próximo a você e ao encontrar o que precisa, é muito simples de fazer o seu pedido. Baixe o app e experimente!",
         image: require("../images/misc/meditation.svg"),
         alt: "",
         direction: "row-reverse",
